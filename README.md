@@ -2,21 +2,15 @@
 
 #### **1. BMI Calculation Formula**
 - **Formula:** 
-  \[
-  \text{BMI} = \frac{\text{Weight (kg)}}{\text{Height (m)}^2}
-  \]
+  text{BMI} = \frac{\text{Weight (kg)}}{\text{Height (m)}^2}
 
 #### **2. Units Conversion**
 - **Height Conversion:**
   - From cm to m: 
-    \[
-    \BMI = Weight (kg) / (Height (m) × Height (m))
-    \]
+    BMI = Weight (kg) / (Height (m) × Height (m))
 - **Weight Conversion:**
   - From lbs to kg: 
-    \[
-    \Weight (kg) = Weight (lbs) / 2.205
-    \]
+    Weight (kg) = Weight (lbs) / 2.205
 
 #### **3. BMI Categories and Interpretations**
 | BMI Range | Category          | Interpretation |
