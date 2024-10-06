@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculation and Interpretation Datasheet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-color: #e9ecef;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            margin-top: 50px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        h3, h4 {
+            color: #0056b3;
+        }
+
+        table {
+            margin: 20px 0;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #dee2e6;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        ul {
+            margin: 15px 0;
+        }
+
+        .formula {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ced4da;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #6c757d;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1 class="text-center">BMI Calculation and Interpretation Datasheet</h1>
+    
+    <h3>1. BMI Calculation Formula</h3>
+    <div class="formula">
+        <strong>Formula:</strong> 
+        <p> 
+            $$ \text{BMI} = \frac{\text{Weight (kg)}}{\text{Height (m)}^2} $$ 
+        </p>
+    </div>
+
+    <h3>2. Units Conversion</h3>
+    <h4>Height Conversion:</h4>
+    <div class="formula">
+        From cm to m: 
+        $$ \text{Height (m)} = \frac{\text{Height (cm)}}{100} $$
+    </div>
+    
+    <h4>Weight Conversion:</h4>
+    <div class="formula">
+        From lbs to kg: 
+        $$ \text{Weight (kg)} = \frac{\text{Weight (lbs)}}{2.205} $$
+    </div>
+
+    <h3>3. BMI Categories and Interpretations</h3>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>BMI Range</th>
+                <th>Category</th>
+                <th>Interpretation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lt; 18.5</td>
+                <td>Underweight</td>
+                <td>Increased risk for nutritional deficiencies</td>
+            </tr>
+            <tr>
+                <td>18.5 - 24.9</td>
+                <td>Normal weight</td>
+                <td>Optimal health; lower risk for chronic diseases</td>
+            </tr>
+            <tr>
+                <td>25.0 - 29.9</td>
+                <td>Overweight</td>
+                <td>Higher risk for chronic diseases; may need lifestyle changes</td>
+            </tr>
+            <tr>
+                <td>&gt;= 30.0</td>
+                <td>Obesity</td>
+                <td>Significant risk for various health conditions</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>4. Age Considerations</h3>
+    <p><strong>Children & Adolescents (2-19 years):</strong></p>
+    <p>Use BMI percentiles:</p>
+    <ul>
+        <li>&lt; 5th percentile: Underweight</li>
+        <li>5th to 84th percentile: Healthy weight</li>
+        <li>85th to 94th percentile: Overweight</li>
+        <li>&gt;= 95th percentile: Obesity</li>
+    </ul>
+    <p><strong>Older Adults:</strong></p>
+    <p>BMI may underestimate body fat. Consider body fat percentage and waist circumference for assessment.</p>
+
+    <h3>5. Gender Differences</h3>
+    <p><strong>Body Composition:</strong></p>
+    <ul>
+        <li>Men: Higher muscle mass, lower body fat.</li>
+        <li>Women: Higher body fat percentage.</li>
+    </ul>
+    <p><strong>Health Risks:</strong></p>
+    <p>Health implications of BMI categories may vary between genders.</p>
+
+    <h3>6. Additional Measurements for Health Assessment</h3>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Measurement</th>
+                <th>Description</th>
+                <th>Risk Thresholds</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Waist Circumference</strong></td>
+                <td>Indicates fat distribution</td>
+                <td>Men: &gt; 102 cm (40 in) <br> Women: &gt; 88 cm (35 in)</td>
+            </tr>
+            <tr>
+                <td><strong>Body Fat Percentage</strong></td>
+                <td>Direct measure of body fat levels</td>
+                <td>Varies by age and gender; consult health guidelines</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>7. Practical Application</h3>
+    <ul>
+        <li><strong>Children:</strong> Use growth charts for BMI-for-age assessment.</li>
+        <li><strong>Adults:</strong> Combine BMI with waist circumference and body fat percentage for a comprehensive assessment.</li>
+        <li><strong>Older Adults:</strong> Discuss BMI with healthcare providers, considering changes in body composition.</li>
+    </ul>
+
+    <div class="footer">
+        <p>Made by Mohamed Elsayed &copy; 2024</p>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>
